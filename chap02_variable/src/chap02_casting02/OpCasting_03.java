@@ -62,7 +62,7 @@ public class OpCasting_03 {
 		   3.8  q3ch변수에 1을 더해 L 이 출력되게 하시오
 		System.out.println((char)(q3ch+1));
 		*/
-		
+		System.out.println("test");
 	}
 
 }
