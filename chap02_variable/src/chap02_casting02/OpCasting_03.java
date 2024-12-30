@@ -44,24 +44,51 @@ public class OpCasting_03 {
 		    double dNum = 2.5;
 		    char q3ch = 'K'; 
 
-		   3.1  iNum1 / iNum2의 몫 출력
-		System.out.println(iNum1/iNum2);
-		   3.2  iNum2 * dNum 한 결과를 변수에 넣고 출력하기
-		int q3Ans = iNum1*iNum2;
-		System.out.println(q3Ans);
-		   3.3  iNum1의 값이 10.0으로 출력되게 하기
-		System.out.println((double)iNum1);
-		   3.4  iNum1 / iNum2 한 결과 소수점까지 나오게 출력하기
-		System.out.println((double)iNum1/iNum2);
-		   3.5  iNum1 / fNum 한 결과 3이 출력되게 하시오
-		System.out.println(iNum1/(int)fNum);
-		   3.6  iNum1 / fNum 한 결과 소수점 13자리이상까지 나오게 하시오
-		System.out.printf("%.13f", (iNum1/fNum));   
-		   3.7  q3ch변수의 유니코드 출력하기
-		System.out.println((int)q3ch);
-		   3.8  q3ch변수에 1을 더해 L 이 출력되게 하시오
-		System.out.println((char)(q3ch+1));
+//	   3.1  iNum1 / iNum2의 몫 출력
+	System.out.println("3.1 : " + (iNum1/iNum2));
+//	   3.2  iNum2 * dNum 한 결과를 변수에 넣고 출력하기
+	int q3Ans = (int) (iNum2*dNum);
+	System.out.println("3.2 : " + q3Ans);
+//	   3.3  iNum1의 값이 10.0으로 출력되게 하기
+	System.out.println("3.3 : " + (double)iNum1);
+	
+//	   3.4  iNum1 / iNum2 한 결과 소수점까지 나오게 출력하기
+	System.out.println("3.4 : " + (double)iNum1/iNum2);
+	
+//	   3.5  iNum1 / fNum 한 결과 3이 출력되게 하시오
+	System.out.println("3.5 : " + (iNum1/(int)fNum));
+//	   3.6  iNum1 / fNum 한 결과 소수점 13자리이상까지 나오게 하시오
+	System.out.printf("3.6 : %.13f\n", (iNum1/fNum));   
+//	   3.7  q3ch변수의 유니코드 출력하기
+	System.out.println("3.7 : " + (int)q3ch);
+//	   3.8  q3ch변수에 1을 더해 L 이 출력되게 하시오
+	System.out.println("3.8 : " + (char)(q3ch+1));
 		*/
+		int iNum1 = 10;
+	    int iNum2 = 4;
+	    float fNum = 3.0f;
+	    double dNum = 2.5;
+	    char q3ch = 'K'; 
+
+	//	   3.1  iNum1 / iNum2의 몫 출력
+		System.out.println("3.1 : " + (iNum1/iNum2));
+	//	   3.2  iNum2 * dNum 한 결과를 변수에 넣고 출력하기
+		int q3Ans = (int) (iNum2*dNum);
+		System.out.println("3.2 : " + q3Ans);
+	//	   3.3  iNum1의 값이 10.0으로 출력되게 하기
+		System.out.println("3.3 : " + (double)iNum1);
+		
+	//	   3.4  iNum1 / iNum2 한 결과 소수점까지 나오게 출력하기
+		System.out.println("3.4 : " + (double)iNum1/iNum2);
+		
+	//	   3.5  iNum1 / fNum 한 결과 3이 출력되게 하시오
+		System.out.println("3.5 : " + (iNum1/(int)fNum));
+	//	   3.6  iNum1 / fNum 한 결과 소수점 13자리이상까지 나오게 하시오
+		System.out.printf("3.6 : %.13f\n", (iNum1/fNum));   
+	//	   3.7  q3ch변수의 유니코드 출력하기
+		System.out.println("3.7 : " + (int)q3ch);
+	//	   3.8  q3ch변수에 1을 더해 L 이 출력되게 하시오
+		System.out.println("3.8 : " + (char)(q3ch+1));
 	}
 
 }
