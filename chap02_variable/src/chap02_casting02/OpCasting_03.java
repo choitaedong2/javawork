@@ -84,7 +84,10 @@ public class OpCasting_03 {
 	//	   3.5  iNum1 / fNum 한 결과 3이 출력되게 하시오
 		System.out.println("3.5 : " + (iNum1/(int)fNum));
 	//	   3.6  iNum1 / fNum 한 결과 소수점 13자리이상까지 나오게 하시오
-		System.out.printf("3.6 : %.13f\n", (iNum1/fNum));   
+		double q3ans = iNum1/(double)fNum;
+		System.out.println("3.6 : " + q3ans);
+		
+		System.out.printf("3.6 : %.13f\n", (double)(iNum1/fNum));   
 	//	   3.7  q3ch변수의 유니코드 출력하기
 		System.out.println("3.7 : " + (int)q3ch);
 	//	   3.8  q3ch변수에 1을 더해 L 이 출력되게 하시오
