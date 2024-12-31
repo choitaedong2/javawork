@@ -33,7 +33,9 @@ public class T04_logical {
 		System.out.println(ch1);
 		System.out.println("대문자인가? " + (ch1>=65 && ch1<=90));
 		System.out.println("대문자인가? " + (ch1>='A' && ch1<='Z'));
-		System.out.println("대문자인가? " + (ch1>='a' && ch1<='z'));
+		System.out.println("대문자인가? " + (ch1>='a' || ch1<='z'));
+		char ch2 = 'l';
+		System.out.println("소문자인가? " + (ch2>='a' && ch1<='z'));
 		
 	}
 
