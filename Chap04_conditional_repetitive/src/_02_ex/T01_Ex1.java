@@ -65,11 +65,11 @@ public class T01_Ex1 {
 		int a_score = sc.nextInt();
 		double total = m_score+f_score+r_score+a_score;
 		
-		System.out.println("중간고사 점수(20) : "+ m_score);
-		System.out.println("기말고사 점수(30) : "+ f_score);
-		System.out.println("과제 점수(30) : "+ r_score);
-		System.out.println("출석 점수(20) : "+ a_score);
-		System.out.println("총점 : "+ total);
+		System.out.printf("중간고사 점수(20) : %.1f\n", m_score);
+		System.out.printf("기말고사 점수(30) : %.1f\n", f_score);
+		System.out.printf("과제 점수(30) : %.1f\n", r_score);
+		System.out.printf("출석 점수(20) : %d\n", a_score);
+		System.out.printf("총점 : %.1f\n", total);
 		
 		if (a_score <= 14)
 			System.out.printf("Fail [출석 횟수 부족(%d/20)]", a_score);
