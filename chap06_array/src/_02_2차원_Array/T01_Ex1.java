@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class T01_Ex1 {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		System.out.println("================================");
 		System.out.println("01번 문제 풀이 결과");
 		int[] ary1 = new int[10];
@@ -19,31 +20,177 @@ public class T01_Ex1 {
 		System.out.println("================================");
 		System.out.println("02번 문제 풀이 결과");
 		
-		for(int i=ary1.length-1; i<0 ;i--) {
+		for(int i=ary1.length-1; i>0 ;i--) {
 			System.out.printf("%d\t",ary1[i]);
 		}
-		System.out.println("================================");
+		System.out.println("\n================================");
 		System.out.println("03번 문제 풀이 결과");
+//		System.out.println("넣고자 하는 정수의 개수를 입력하십시오.");
+//		int[] ary3 = new int[sc.nextInt()];
+//		for(int i=0; i<ary3.length; i++) {
+//			if(i==0) {
+//				System.out.println("넣고자 하는 정수를 입력해 주십시오");
+//				int tmp = sc.nextInt();
+//				ary3[i] = tmp;
+//			}
+//			else {
+//				System.out.println("다음으로 넣을 정수를 입력해 주십시오");
+//				int tmp = sc.nextInt();
+//				ary3[i] = tmp;
+//			}
+//		}
+//		for(int i=0; i<ary3.length; i++) {
+//			for(int j=1; j<ary3.length-i;j++) {
+//				if(ary3[j-1] >= ary3[j]) {
+//					int tmp = ary3[j];
+//					ary3[j] = ary3[j-1];
+//					ary3[j-1] = tmp;
+//				}
+//			}
+//		}
+//		
+//		for(int i=0; i<ary3.length; i++)
+//			if(i==ary3.length-1)
+//				System.out.print(ary3[i] + "\n");
+//			else
+//				System.out.print(ary3[i] + ", ");
 		System.out.println("================================");
 		System.out.println("04번 문제 풀이 결과");
+		String[] ary4 = {
+				"사과", "귤", "포도", "복숭아", "참외"
+		};
+		for(int i=0; i<ary4.length;i++) {
+			if(ary4[i]=="귤") {
+				System.out.println(i + "(인덱스 번호) = '귤'");
+			}
+		}
 		System.out.println("================================");
 		System.out.println("05번 문제 풀이 결과");
+		System.out.println("단어를 입력해 주세요.");
+//		String word5 = sc.next();
+//		char[] word5_list = new char[word5.length()];
+//		for(int i=0; i<word5_list.length;i++) {
+//			word5_list[i] = word5.charAt(i);
+//		}
+//		System.out.println("찾고자하는 문자를 입력해주세요.");
+//		char tmp5 = sc.next().charAt(0);
+//		System.out.println("문자열 : "+ word5);
+//		System.out.println("문자 : "+ tmp5);
+//		System.out.printf("%s에 %s가 존재하는 위치(인덱스) :",word5, tmp5);
+//		int count5 = 0;
+//		for(int i=0; i<word5_list.length;i++) {
+//			if(word5_list[i]==tmp5) {
+//				System.out.print(" "+i);
+//				count5++;
+//			}
+//		}
+//		System.out.printf("\n%s 개수 : %d\n",tmp5, count5);
 		System.out.println("================================");
 		System.out.println("06번 문제 풀이 결과");
+		String[] week6= {
+			"월", "화", "수", "목", "금", "토", "일"	
+		};
+		System.out.println("0~6사이의 정수를 입력해 주십시오");
+//		int num6 = sc.nextInt();
+//		if(num6<=6 && num6>=0)
+//			System.out.println(week6[num6]+"요일");
+//		else
+//			System.out.println("잘못입력하셨습니다.");
 		System.out.println("================================");
 		System.out.println("07번 문제 풀이 결과");
+		System.out.println("넣고자 하는 정수의 개수를 입력하십시오.");
+//		int[] ary7 = new int[sc.nextInt()];
+//		for(int i=0; i<ary7.length; i++) {
+//			if(i==0) {
+//				System.out.println("넣고자 하는 정수를 입력해 주십시오");
+//				int tmp = sc.nextInt();
+//				ary7[i] = tmp;
+//			}
+//			else {
+//				System.out.println("다음으로 넣을 정수를 입력해 주십시오");
+//				int tmp = sc.nextInt();
+//				ary7[i] = tmp;
+//			}
+//		}
+//		int sum7 = 0;
+//		for(int i=0; i<ary7.length; i++) {
+//			sum7 += ary7[i];
+//		}
+//		System.out.println("배열 전체의 합 : " + sum7);
 		System.out.println("================================");
 		System.out.println("08번 문제 풀이 결과");
+//		System.out.println("3이상의 홀수를 입력해 주십시오.");
+//		int num8 = sc.nextInt();
+//		if(num8%2!= 1 || num8>=3)
+//			while(num8%2!=1) {
+//				System.out.println("정수 : "+num8);
+//				System.out.println("다시 입력하세요.");
+//				num8 = sc.nextInt();
+//			}
+//		System.out.println("정수 : "+num8);
+//		int[] num8_arr = new int[num8*2-1];
+//		for(int i =0; i<num8_arr.length; i++) {
+//			if(i<num8) {
+//				num8_arr[i] = i+1;
+//				System.out.print(num8_arr[i] + ", ");
+//			}
+//			else {
+//				num8_arr[i] = num8*2-1-i;
+//				System.out.print(num8_arr[i] + ", ");
+//			}
+//		}
+//		System.out.println("");
 		System.out.println("================================");
 		System.out.println("09번 문제 풀이 결과");
-		System.out.println("================================");
-		System.out.println("10번 문제 풀이 결과");
+		String[] menu9 = {
+				"양념", "간장", "후라이드"
+		};
+		System.out.print("주문하실 치킨 메뉴를 입력해 주세요. : ");
+		String order9 = sc.next();
+		System.out.println(order9);
+		int count9 = 0;
+		for(int i =0; i<menu9.length; i++) {
+			if(menu9[i].equals(order9)) // 값이 같은지 확인하기 위해서는 equal 확인
+				System.out.println(order9+"치킨 배달 가능");
+			else
+				count9++;
+		}
+		if(count9 == menu9.length)
+			System.out.println(order9 + "치킨은 없는 메뉴입니다.");
 		
 		System.out.println("================================");
+		System.out.println("10번 문제 풀이 결과");
+		int[] num10 = new int[10];
+		for(int i=0; i<num10.length; i++) {
+			num10[i] = (int)(Math.random()*10);
+			System.out.print(num10[i]+", ");
+			if(i == 9) {
+				num10[i] = (int)(Math.random()*10);
+				System.out.print(num10[i]+"\n");
+			}
+		}
+		for(int i=0; i<num10.length; i++) {
+			for(int j=1; j<num10.length-1; j++)
+				if(num10[j-1] >= num10[j]) {
+					int tmp = num10[j];
+					num10[j] = num10[j-1];
+					num10[j-1] = tmp;
+				}
+		}
+		System.out.println("최대값 : " + num10[9]);
+		System.out.println("최소값 : " + num10[0]);
+		System.out.println("================================");
 		// 11. 사용자로부터 정수값 5개 배열에 입력
-		// 오름차순 정렬로 정렬하기
+		// 오름차순 정렬로 정렬하기 : 
+		// Bubble 정렬 : 1, 2, 3, 4, 5
+		// 	1) 1<2, 2<3, 3<4, 4<5 순으로 큰 수를 뒤로 보냄
+		// 	2) 1<2, 2<3, ... 3<4
+		// select 정렬 : 7, 2, 3, 4, 5, 6
+		//	1) 7<2, 7<3, 7<4, 7<5, 7<6 맨 앞에 있는 숫자와 다른 수 비교하여 낮은 수를 앞으로 불러옴
+		// insert 정렬 : 7, 2, 3, 4, 5, 6
+		//	1) 7<2, 
 		System.out.println("11번 문제 풀이 결과");
-		Scanner sc = new Scanner(System.in);
+		
 		int[] ary = new int[5];
 		System.out.println("정수 5개를 입력해 주십시오.");
 		for(int i=0; i<ary.length; i++) {
@@ -58,11 +205,13 @@ public class T01_Ex1 {
 		}
 		System.out.println("");
 		for(int j=1; j<ary.length; j++) {
+			boolean flag = false;
 			for(int i=1; i<ary.length; i++) {
 				if(ary[i]<=ary[i-1]) {
 					int tmp = ary[i-1];
 					ary[i-1] = ary[i];
 					ary[i] = tmp;
+					flag = true;
 				}
 			}
 		}
