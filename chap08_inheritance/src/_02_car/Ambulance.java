@@ -4,7 +4,7 @@ package _02_car;
 public class Ambulance extends Car { 
 	
 	// 부모 클래스 생성자에 대한 부모에게 넘겨줄 super값 필수
-	Ambulance(String model, String company) {
+	public Ambulance(String model, String company) {
 		super(model, company); // super : 부모의 생성자 호출
 	}
 //	Ambulance() {
@@ -12,10 +12,10 @@ public class Ambulance extends Car {
 //	}
 	
 	
-	boolean siren; // 기본값 : false
+	public boolean siren; // 기본값 : false
 	
 	// 메소드
-	void siren() {
+	public void siren() {
 		if(siren = !siren)
 			System.out.println("삐요삐요~~~~");
 		else

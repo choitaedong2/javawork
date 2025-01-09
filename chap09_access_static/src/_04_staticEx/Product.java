@@ -1,4 +1,4 @@
-package _05_staticEx;
+package _04_staticEx;
 /*
  Produnt
  	고유의 제품번호
@@ -16,5 +16,9 @@ public class Product {
 	static int getStock(){
 		System.out.println("생성된 총 제품의 갯수 : " + stock);
 		return stock;
+	}
+	static int resetStock() {
+		System.out.println("생성된 총 제품의 갯수를 리셋합니다.");
+		return stock=0;
 	}
 }

@@ -9,12 +9,12 @@ package _03_bank;
 public class Bank {
 	private int count = 1000000;
 	
-	void depositCount(int count) {
+	public void depositCount(int count) {
 		System.out.printf("계좌에 '%d'를 입금합니다\n", count);
 		this.count += count;
 	}
 	
-	void withdrawalCount(int count) {
+	public void withdrawalCount(int count) {
 		if(this.count < count) {
 			System.out.println("계좌 잔액이 부족합니다.");
 			System.out.printf("현재 출근 가능한 계좌 잔액은 %d입니다.\n", this.count);
@@ -25,7 +25,7 @@ public class Bank {
 		}
 	}
 	
-	int getCount() {
+	public int getCount() {
 		return count;
 	}
 }

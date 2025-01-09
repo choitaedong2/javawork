@@ -1,4 +1,4 @@
-package _05_staticEx;
+package _04_staticEx;
 
 import java.util.Scanner;
 /*
@@ -16,7 +16,7 @@ public class Product_main {
 		int input;
 		do {
 			System.out.println("수행하고자 하는 작업을 선택해 주십시오.");
-			System.out.println("1: 제품생산, 2: 총 제품 갯수 조회, 0: 작업 종료");
+			System.out.println("1: 제품생산, 2: 총 제품 갯수 조회, 3: 제품 갯수 리셋,0: 작업 종료");
 			input = sc.nextInt();
 			switch(input) {
 			case 1:
@@ -24,6 +24,9 @@ public class Product_main {
 				break;
 			case 2:
 				Product.getStock();
+				break;
+			case 3:
+				Product.resetStock();
 				break;
 			case 0:
 				System.out.println("작업을 종료합니다.");
