@@ -22,10 +22,8 @@ public class LibraryController {
 		aList.add(book);
 	}
 	
-//	void insertBook(String title, String author, String publisher) {
-//		aList.add(new Book(title, author, publisher));
-//	}
-	
+
+
 	List<Book> selectAll() {
 		return aList;
 	}
@@ -46,7 +44,7 @@ public class LibraryController {
 	}
 	// 해당 단어가 포함하는 도서명 검색
 	ArrayList<Book> searchBookTitle2(String search) {
-		ArrayList<Book> searchList = null;
+		ArrayList<Book> searchList = new ArrayList<>();
 		if(aList.isEmpty()) {
 			System.out.println("책이 없습니다.");
 			return null;
